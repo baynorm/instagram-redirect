@@ -6,30 +6,22 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config','G-F1H6R96NR5');
-</script>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0;url=https://www.instagram.com/edepkulturu/">
-    <style>
-      body {
-        background:#fff;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        height:100vh;
-        flex-direction:column;
-        font-family:Arial;
-      }
-      img {
-        max-width:250px;
-        border-radius:20px;
-        box-shadow:0 0 20px rgba(0,0,0,0.3);
-      }
-      p {color:#555;}
-    </style>
-  </head>
-  <body>
-    (Offline)img src="https://i.hizliresim.com/euz5biw.jpg" alt="Instagram">
-    <p>Instagram sayfamıza yönlendiriliyorsunuz...</p>
-  </body>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Yönlendiriliyor...</title>
+  <script>
+    // Deep link ile Instagram aç
+    window.location.href = "instagram://user?username=edepkulturu";
+
+    // Eğer uygulama yoksa web sayfasına yönlendir
+    setTimeout(function() {
+      window.location.href = "https://www.instagram.com/edepkulturu/";
+    }, 2000);
+  </script>
+</head>
+<body>
+  <p>Instagram uygulamanız açılıyor...</p>
+</body>
 </html>
