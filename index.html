@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Yönlendiriliyor...</title>
+
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-F1H6R96NR5"></script>
   <script>
@@ -10,6 +11,12 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config','G-F1H6R96NR5');
+
+    // QR tıklama event'i
+    gtag('event', 'qr_click', {
+      'event_category': 'Redirect',
+      'event_label': 'Instagram QR'
+    });
   </script>
 
   <!-- Meta refresh ile yönlendirme -->
